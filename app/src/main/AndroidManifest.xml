@@ -2,6 +2,18 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.jaeseonglee.www.mlhprime">
 
+    <uses-permission android:name="android.permission.NFC"></uses-permission>
+    <uses-permission android:name="android.permission.BIND_NFC_SERVICE"></uses-permission>
+
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="true" />
+
+    <uses-sdk android:minSdkVersion="18"
+        android:targetSdkVersion="25"
+        android:maxSdkVersion="25" />
+
+
     <!--div>Icons made by
         <a href="http://www.flaticon.com/authors/madebyoliver" title="Madebyoliver">Madebyoliver</a>
             from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>is licensed by

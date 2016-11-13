@@ -20,14 +20,11 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.content.Context;
 import android.graphics.*;
-import android.provider.ContactsContract;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -61,9 +58,15 @@ public class MainActivity extends Activity {
         mPaint.setStrokeJoin(Paint.Join.ROUND);
         mPaint.setStrokeCap(Paint.Cap.ROUND);
         mPaint.setStrokeWidth(12);
-        mEmboss = new EmbossMaskFilter(new float[] { 1, 1, 1 }, 0.4f, 6, 3.5f);
+        mEmboss = new EmbossMaskFilter(new float[]{1, 1, 1}, 0.4f, 6, 3.5f);
         mBlur = new BlurMaskFilter(8, BlurMaskFilter.Blur.NORMAL);
+
+
+
     }
+
+
+
 
     public class MyView extends View {
 
@@ -140,7 +143,7 @@ public class MainActivity extends Activity {
                     invalidate();
                     break;
             }
-            String coordinates = String.format("%.1f, %.1f", x, y);
+            String coordinates = String.format("%.1f,%.1f", x, y);
 
             myRef = myRootRef.child("Coordinates");
 
@@ -170,6 +173,10 @@ public class MainActivity extends Activity {
 
 
                 return true;
+
+            case R.id.export:
+
+
             default:
                 return super.onOptionsItemSelected(item);
         }
