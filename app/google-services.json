@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "72687232560",
+    "firebase_url": "https://mlhprime2016.firebaseio.com",
+    "project_id": "mlhprime2016",
+    "storage_bucket": "mlhprime2016.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:72687232560:android:4b413e99bb4a91a2",
+        "android_client_info": {
+          "package_name": "com.jaeseonglee.www.mlhprime"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "72687232560-88ttdmju7rglmtughlj8dl12imf06f8m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUn9wuD4u9s544nmQS6X3AdXT41pbnKH8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
